@@ -19,7 +19,8 @@ public class Carro {
         this.preco = preco;
     }
 
-    public void calculaPrecoFinal(byte parcelas){
+    public void calculaPrecoFinal(double preco, int parcelas){
+        this.preco = preco;
         switch(parcelas){
             case 0:
                 this.preco = this.preco-=(preco*0.2);
